@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p id="sample">20</p>
+	<p id="sample2"></p>
+	<h3 id = "car"></h3>
+	<h2 id="datetime"></h2>
+	<h2 id = "year"></h2>
+	<h1 id = "setYear"></h1>
+	<h4 id="random"></h4>
+	<h6 id="pi"></h6>
+	<h5 id = "sqrt"></h5>
+	<h3 id="max"></h3>
+	<h3 id="min"></h3>
+	<h3 id="greater"></h3>
+	<h3 id="check"></h3>
+	<h3 id="sort"></h3>
+	<h3 id="colour"></h3>
+	<h3 id="date"></h3>
+	<h3 id="floor"></h3>
+	<h3 id="pow"></h3>
+	<script type="text/javascript">
+		
+		 
+			var str = "savitha";
+			var ustr = str.toUpperCase();
+			var lstr = str.toLowerCase();
+
+		document.getElementById("sample").innerHTML = window.ustr;
+		document.getElementById("sample2").innerHTML = lstr;
+
+
+		var car = {type:"Fiao",model:"500",colour:"black"};
+		// alert(car);
+
+		document.getElementById("car").innerHTML = car.type;
+		document.getElementById("car").innerHTML = car.model;
+		document.getElementById("car").innerHTML = car.colour;
+
+		var d = new Date();
+		document.getElementById("datetime").innerHTML = d;
+
+
+		var y = new Date();
+		document.getElementById("year").innerHTML = y.getFullYear();
+
+		var y1 = new Date();
+		y1.setFullYear(2010);
+		document.getElementById("setYear").innerHTML = y1;
+
+
+		var r = Math.random();
+		document.getElementById("random").innerHTML = r;
+
+		var pi = Math.PI;
+		document.getElementById("pi").innerHTML = pi;
+
+		var s = Math.sqrt(1536);
+		document.getElementById("sqrt").innerHTML = s;
+
+		var max = Math.max(265,645);
+		document.getElementById("max").innerHTML = max;
+
+		var min = Math.min(356763,74637);
+		document.getElementById("min").innerHTML = min;
+
+		var a1 = 10;
+		var a2 = 20;
+
+		if(a1 > a2){
+			document.getElementById("greater").innerHTML = "greater";
+		}
+		else{
+			document.getElementById("greater").innerHTML = "Lesser than ";
+
+		}
+
+
+		var age = 16;
+
+		var check = (age < 18 ) ? "Too Young" : " teen";
+
+		 document.getElementById("check").innerHTML = check;
+
+
+		 var arr = ["mango","apple","graps"];
+		 var sort = arr.sort();
+
+		 document.getElementById("sort").innerHTML = sort;
+
+		 var str = "savitha";
+		 document.getElementById("colour").style.color = "Blue";
+
+		 var date = Date.parse("March 3 , 2020");
+		 var d = new Date(date);
+		 document.getElementById("date").innerHTML = d;
+
+
+		 document.getElementById("floor").innerHTML = Math.floor(Math.random() * 10);
+
+		 document.getElementById("pow").innerHTML = Math.random(Math.pow(3,5));
+
+	</script>
+
+		
+
+	<script type="text/javascript1">
+
+	</script>
+
+</body>
+</html>
